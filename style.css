@@ -1,0 +1,130 @@
+/*
+Theme Name:     ClassiPress Example Child Theme
+Theme URI:      http://appthemes.com/
+Description:    Example child theme for the ClassiPress theme
+Author:         AppThemes
+Author URI:     http://appthemes.com/
+Template:       classipress
+Version:        0.1.0
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+.entry-title{
+  font-size: 32px;
+  margin-bottom: 16px!important;
+  text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+.summary{
+  font-size: 22px;
+  margin-bottom: 16px!important;
+
+}
+.title_ad a{
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #343A40;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 1px;
+  max-width: calc(100% - 88px);
+}
+.category_ad a{
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #868E96;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}
+.description_ad{
+  min-height: 104px;
+  padding: 12px;
+}
+.price_ad{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #343A40;
+}
+
+.has-header-image .home-cover{
+  background: inherit;
+}
+#content {
+  background: #FFF;
+}
+.ajax-tags {
+  list-style-type: none;
+}
+
+.ajax-tags-item {
+  width: 300px;
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.ajax-tags-item label {
+  font-size: 18px;
+  color: #383c40;
+  position: absolute;
+  z-index: 10;
+  padding-left: 35px;
+  cursor: pointer;
+}
+.ajax-tags-item input {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.ajax-tags-item input:checked ~ .check {
+  border-color: #1abc9c;
+  box-shadow: 0px 0px 0px 15px #1abc9c inset;
+}
+.ajax-tags-item input:checked ~ label {
+  color: #1abc9c;
+}
+.ajax-tags-item input:checked ~ .check::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.ajax-tags-item .check {
+  width: 23px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 2px solid #383c40;
+  box-shadow: 0px 0px 0px 0px #383c40 inset;
+  transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
+}
+.ajax-tags-item .check::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 4;
+  position: absolute;
+  transform: scale(0);
+  background-size: 76%;
+  background-image: url('checkmark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-delay: 0.2s !important;
+  transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
+}
+.filters-cointainer{
+  padding: 7px;
+  border: 1px solid #DEDEDE;
+}
